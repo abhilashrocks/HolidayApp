@@ -1,0 +1,20 @@
+<h1>List of 2015 USA Holidays</h1>
+<div class="container">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let x of fullData">
+        <td>
+          <a [routerLink]="['/detail', x.name,x.date,x.observed,x.public]">
+            {{x.name}}
+          </a>
+        </td>
+       </tr>
+    </tbody>
+  </table>
+</div>
+
